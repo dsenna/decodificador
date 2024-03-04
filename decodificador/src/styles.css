@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    /* 100% da largura da janela do navegador */
+    height: 100vh;
+    /* 100% da altura da janela do navegador */
+    background-color: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --dark-blue-100: #609ED4;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+
+    --light-blue-100: #F3F5FC;
+    --light-blue-200: #EFF1FA;
+    --light-blue-300: #E9ECF8;
+    --light-blue-400: #AAB2D5;
+    --light-blue-500: #757FB2;
+
+    --gray-100: #CED4DA;
+    --gray-200: #ADB5BD;
+    --gray-300: #868E96;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+}
+
+textarea {
+    /* border: 1px solid red; */
+    outline: none;
+    width: 100%;
+    height: 93%;
+    background-color: transparent;
+    font-size: 2rem;
+    color: var(--dark-blue-300);
+    border: none;
+    resize: none;
+}
+
+textarea::placeholder {
+    font-size: 2rem;
+    color: var(--dark-blue-300);
+}
+
+.aleta_botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    /* height: 20%; */
+    /* border: 1px solid red; */
+}
+
+.botoes_crip-descrip {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    height: 80%;
+}
+
+.msg_alerta {
+    height: 100%;
+}
+
+button {
+    border: 1px solid var(--dark-blue-300);
+    border-radius: 24px;
+    width: 100%;
+    color: var(--dark-blue-300);
+    background-color: transparent;
+    font-size: 16px;
+    height: 63px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    /* Centraliza os itens no eixo principal (horizontal) */
+    align-items: center;
+    /* Centraliza os itens no eixo transversal (vertical) */
+    /* border: 1px solid red; */
+
+}
+
+.main_1 {
+    width: 65%;
+    height: 100vh;
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.main_2 {
+    width: 35%;
+    height: 100vh;
+    /* border: 1px solid red; */
+    padding: 40px;
+}
+
+.maria {
+    width: 10%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.joao {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-right: 70px;
+    padding-bottom: 40px;
+}
+
+.imput_alerta_botoes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    padding: 150px 32px 25px 32px;
+    /* Topo, Direita, Baixo, Esquerda */
+}
+
+.logo {
+    width: 31px;
+    height: 48px;
+}
+
+.msg_alerta {
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    color: var(--gray-400);
+}
+
+.botoes {
+    width: 100%;
+    height: 80%;
+    /* border: 1px solid red; */
+}
+
+.retangulo {
+    /* border: 1px solid red; */
+    background-color: white;
+    border-radius: 32px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; */
+    padding: 0px 32px 0px 32px;
+    /* Topo, Direita, Baixo, Esquerda */
+    box-shadow: 10px 10px 35px -25px rgba(0, 0, 0, 0.85);
+    padding-bottom: 25px;
+    padding-top: 25px;
+    /* gap: 30px; */
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 93%;
+}
+
+.infor {
+    width: 60%;
+}
+
+.texto-n-encontrado {
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--gray-500);
+}
+
+.texto-crip-descrip {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    color: var(--gray-400);
+    word-wrap: break-word;
+}
+
+.botao_criptografar {
+    background-color: var(--dark-blue-400);
+    color: var(--light-blue-100);
+}
+
+.botao_copia {
+    width: 100%;
+    height: 63px;
+}
+
+
+@media (max-width: 1200px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .main_1 {
+        width: 100vw;
+        height: 80vh;
+        flex-direction: column;
+    }
+
+    .maria {
+        height: 10%;
+    }
+
+    .joao {
+        height: 90%;
+    }
+
+    .imput_alerta_botoes {
+        padding-top: 30px;
+        gap: 10px
+    }
+
+    .main_2 {
+        width: 100vw;
+        height: 20%;
+    }
+
+    .retangulo {
+        gap: 30px;
+    }
+
+    .infor {
+        display: none;
+    }
+
+    .joao {
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 800px) {
+    .botoes_crip-descrip {
+        flex-direction: column;
+    }
+}

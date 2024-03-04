@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./src/styles.css">
+    <script src="./src/script.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="main_1">
+            <div class="maria">
+                <img class="logo" src="./src/a.svg" alt="a">
+            </div>
+
+            <div class="joao">
+                <div class="imput_alerta_botoes">
+                    <textarea id="texto-original" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+                    <div class="aleta_botoes">
+                        <div class="msg_alerta">
+                            <img src="./src/icon_esclamacao.svg" alt="Descrição do seu SVG">Apenas letras minúsculas e
+                            sem
+                            acento.
+                        </div>
+                        <div class="botoes_crip-descrip">
+                            <button id="botao_criptografar" class="botao_criptografar">Criptografar</button>
+                            <button id="botao_descriptografar">Descriptografar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="main_2">
+            <div class="retangulo">
+                <div class="infos">
+                    <img class="infor" src="./src/pessoa_lupa.png" alt="">
+                    <span class="texto-n-encontrado">Nenhuma mensagem encontrada</span>
+                    <span class="texto-crip-descrip">Digite um texto que você deseja criptografar ou
+                        descriptografar.</span>
+                </div>
+                <button id="botao_copia" class="botao_copia" style="display:none;">Copiar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
